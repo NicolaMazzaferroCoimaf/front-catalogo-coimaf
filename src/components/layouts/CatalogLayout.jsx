@@ -1,21 +1,23 @@
 import logo from "../../assets/coimaf_logo.png";
+import '../../assets/css/catalogLayout.css';
+
 
 export default function CatalogLayout({ children, page, pagination = null }) {
   return (
     <div className="bg-stone-100">
-      <div className="min-h-screen bg-white text-sm text-gray-600">
+      <div className="min-h-screen bg-white text-sm text-gray-600 flex-1 max-w-6xl mx-auto pb-10">
 
         {/* Header */}
-        <header className="relative px-8 py-4 flex items-center justify-between bg-no-repeat">
+        <header className="relative px-8 py-4 flex items-center justify-between bg-no-repeat bg-header">
           <div className="flex items-center justify-between w-full max-w-6xl mx-auto m-4 z-10">
-            <div>
+            {/* <div>
               <img src={logo} alt="Logo Header" className="h-7 mb-2" />
-              <p className="leading-tight">
+              <p className="leading-tight text-white">
                 Via Piani di Bella, snc, 88060 San Sostene CZ <br />
                 Telefono: 0967 522303
               </p>
-            </div>
-            <span className="text-2xl text-gray-600 uppercase">Catalogo 2025</span>
+            </div> */}
+            <span className="text-2xl text-white font-semibold uppercase">Catalogo 2025</span>
           </div>
         </header>
 
@@ -25,7 +27,7 @@ export default function CatalogLayout({ children, page, pagination = null }) {
         </main>
 
         {/* Footer */}
-        <footer className="border-t border-[#06215D] py-9 text-sm text-gray-600">
+        <footer className="border-t border-[#06215D] py-9 text-sm text-gray-600 flex-1 max-w-6xl mx-auto px-4">
           <div className="max-w-6xl mx-auto w-full flex flex-col items-center gap-6">
 
             {/* Riga centrale allineata */}
