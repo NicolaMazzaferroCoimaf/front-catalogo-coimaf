@@ -1,1 +1,36 @@
 @import "tailwindcss";
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: #ccc;
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+/* Layout generico */
+.page {
+    max-width: 210mm;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    position: relative;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+}
+
+/* Tipografia */
+h1 {
+    color: rgb(39, 77, 102);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+p {
+    color: rgb(39, 77, 102);
+}
